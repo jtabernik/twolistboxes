@@ -1,0 +1,28 @@
+.lb-options-list {
+    width: 300px;
+}
+
+.lb-move-buttons {
+    width: 40px;
+    margin-right: 0px;
+}
+
+.lb-button-block {
+    list-style: none;
+    display: inline-block;
+    padding-left: 0px;
+}
+
+.lb-select-block-buttons {
+    padding: 10px;
+    margin-top: 70px;
+}
+
+.lb-selector-block {
+    float: left;
+}
+
+.lb-selector-block-buttons {
+    margin-left: 12px;
+    width: 60px;
+}
