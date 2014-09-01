@@ -133,7 +133,7 @@
             _leftSelected: function (_this) {
                 var options = $(_this._controls().selectedList).find("option:selected");
                 for (var i = 0; i < options.length; i++) {
-                    removeFromSelected(_this, options[i]);
+                    this._removeFromSelected(_this, options[i]);
                 }
                 _this._redraw(false);
             },
@@ -141,7 +141,7 @@
             _leftAll: function (_this) {
                 var options = $(_this._controls().selectedList).find("option");
                 for (var i = 0; i < options.length; i++) {
-                    removeFromSelected(_this, options[i]);
+                    this._removeFromSelected(_this, options[i]);
                 }
                 _this._redraw(false);
             },
