@@ -1,4 +1,3 @@
-
 (function ($) {
 
     $.fn.listboxselector = function (method) {
@@ -117,7 +116,7 @@
             _rightAll: function (_this) {
                 var options = $(_this._controls().availableList).find("option");
                 for (var i = 0; i < options.length; i++) {
-                    _this._settings().selectedOptions.push(makeObject(options[i]));
+                    _this._settings().selectedOptions.push(_this._makeObject(options[i]));
                 }
                 _this._redraw(true);
             },
@@ -133,7 +132,7 @@
             _leftSelected: function (_this) {
                 var options = $(_this._controls().selectedList).find("option:selected");
                 for (var i = 0; i < options.length; i++) {
-                    this._removeFromSelected(_this, options[i]);
+                    _this._removeFromSelected(options[i]);
                 }
                 _this._redraw(false);
             },
@@ -141,7 +140,7 @@
             _leftAll: function (_this) {
                 var options = $(_this._controls().selectedList).find("option");
                 for (var i = 0; i < options.length; i++) {
-                    this._removeFromSelected(_this, options[i]);
+                    _this._removeFromSelected(options[i]);
                 }
                 _this._redraw(false);
             },
